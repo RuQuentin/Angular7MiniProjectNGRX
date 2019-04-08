@@ -27,5 +27,5 @@
   
     <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
     <tr mat-row *matRowDef="let row; columns: displayedColumns;"
-    [routerLink]="['/home/', row.id]" (click)="chooseUser(row)"></tr>
+    [routerLink]="['/home/', row.id]" (click)="chooseUser(row.id)"></tr>
   </table>

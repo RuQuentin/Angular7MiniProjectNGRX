@@ -1,5 +1,5 @@
 <mat-card>
-  <img mat-card-image [src]="currentUser.avatar">
-  <mat-card-title>{{currentUser.last_name}}</mat-card-title>
-  <mat-card-subtitle>{{currentUser.first_name}}</mat-card-subtitle>
+  <img mat-card-image [src]="usersList$ | async | userData:(user$|async):'avatar'">
+  <mat-card-title>{{ usersList$ | async | userData:(user$|async):'first_name' }}</mat-card-title>
+  <mat-card-subtitle>{{ usersList$ | async | userData:(user$|async):'last_name' }}</mat-card-subtitle>
 </mat-card>

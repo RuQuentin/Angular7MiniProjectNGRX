@@ -8,6 +8,8 @@ import { AppRoutingModule } from '../../app-routing.module';
 
 
 import { UsersListService } from './users-list/users-list.service';
+import { UserDataPipe } from './user/user.pipe'
+
 
 import { HomeComponent } from './home.component';
 import { UsersListComponent } from './users-list/users-list.component';
@@ -17,7 +19,8 @@ import { UserComponent } from './user/user.component';
   declarations: [
     HomeComponent,
     UsersListComponent,
-    UserComponent
+    UserComponent,
+    UserDataPipe
   ],
   imports: [
     CommonModule,
@@ -31,7 +34,8 @@ import { UserComponent } from './user/user.component';
   ],
   exports: [
     // MatSortModule,
-    MatTableModule
+    MatTableModule,
+    // UserDataPipe
   ]
 })
 export class HomeModule {}

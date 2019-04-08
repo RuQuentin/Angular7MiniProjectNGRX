@@ -8,8 +8,9 @@ import * as usersListActions from '../../../store/actions/users-list.actions'
 import { Store, select } from '@ngrx/store';
 
 import { IAppState } from '../../../store/state/app.state';
-import { GetUsers } from '../../../store/actions/users-list.actions';
+import { GetUsers, SelectUser } from '../../../store/actions/users-list.actions';
 import { selectUsersList } from '../../../store/selectors/users-list.selectors';
+import { getInitialInstance } from '../../../store/state/app.state'
 
 @Component({
   selector: 'users-list',
@@ -32,4 +33,8 @@ export class UsersListComponent implements OnInit {
   ngOnInit() {
     this.store.dispatch(new GetUsers())
   };
+
+  chooseUser(id: string) {
+    this.store.dispatch(new SelectUser(id));
+  }
 }
