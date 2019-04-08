@@ -1,0 +1,16 @@
+.wrapper {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+
+  margin: 10px auto;
+}
+
+.users-list {
+  flex-basis: 65%;
+}
+
+.user-details {
+  flex-basis: 30%;
+}
