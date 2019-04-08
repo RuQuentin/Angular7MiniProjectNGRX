@@ -20,11 +20,11 @@ export class UsersListService {
       .pipe(catchError((error: any) => Observable.throw(error)))
   }
 
-  setCurrentUser(user) {
-    this.currentUser = user;
-  }
+  // setCurrentUser(user) {
+  //   this.currentUser = user;
+  // }
 
-  getCurrentUser() {
-    return this.currentUser;
-  }
+  // getCurrentUser() {
+  //   return this.currentUser;
+  // }
 }

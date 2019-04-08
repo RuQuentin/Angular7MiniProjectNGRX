@@ -35,7 +35,7 @@ import { UserComponent } from './user/user.component';
   exports: [
     // MatSortModule,
     MatTableModule,
-    // UserDataPipe
+    UserDataPipe
   ]
 })
 export class HomeModule {}

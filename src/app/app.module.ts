@@ -10,6 +10,8 @@ import { CoreModule } from './core/core.module';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeModule } from './pages/home/home.module';
+import { HeaderComponent } from './components/header/header.component';
+import { FooterComponent } from './components/footer/footer.component'
 
 import { environment } from '../environments/environment';
 import { appReducers } from './store/reducers/app.reducers';
@@ -19,6 +21,8 @@ import { UsersListEffects } from './store/effects/users-list.effects'
 @NgModule({
   declarations: [
     AppComponent,
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
