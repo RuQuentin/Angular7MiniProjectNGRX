@@ -1,0 +1,11 @@
+.login-form-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+
+  margin: 20% auto;
+}
+
+.login-form-wrapper > * {
+  width: 100%;
+}
