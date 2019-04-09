@@ -1,0 +1,36 @@
+<div class="login-form-wrapper">
+  <mat-form-field>
+    <input
+      matInput
+      placeholder="Email"
+      type="email"
+      name="userEmail"
+      [formControl]="userEmail"
+      [errorStateMatcher]="matcher"
+      >
+
+      <mat-error *ngIf="userEmail.hasError('email') && !userEmail.hasError('required')">
+          Please enter a valid email address
+        </mat-error>
+        <mat-error *ngIf="userEmail.hasError('required')">
+          Email is <strong>required</strong>
+        </mat-error>
+  </mat-form-field>
+
+  <mat-form-field>
+    <input
+      matInput placeholder="Password"
+      type="password"
+      name="userPassword"
+      [formControl]="userPassword"
+      required>
+  </mat-form-field>
+
+  <button
+    (click)="onLogIn(userEmail.value, userPassword.value)"
+    color="warn"
+    mat-flat-button>
+    Log In
+  </button>
+
+</div>

@@ -5,6 +5,6 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class UserDataPipe implements PipeTransform {
   transform(usersList, id, property) {
-    return usersList[id][property]
+    return usersList[id - 1][property]
   }
 }
