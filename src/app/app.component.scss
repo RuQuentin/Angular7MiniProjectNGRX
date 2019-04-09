@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.router-wrapper {
+  flex: 1 0 auto;
+}
+
+app-header {
+  flex: 0 0 auto;
+}
+
+app-footer {
+  flex: 0 0 auto;
+}

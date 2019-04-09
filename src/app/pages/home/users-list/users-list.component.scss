@@ -1,0 +1,22 @@
+table {
+  width: 100%;
+}
+
+tr[mat-row] {
+  cursor: pointer;
+}
+
+th.mat-sort-header-sorted {
+  color: black;
+}
+
+.avatar-wrapper {
+  height: 30px;
+}
+
+.avatar {
+  display: inline-block;
+  max-width: 30px;
+  height: auto;
+  border-radius: 50%;
+}
