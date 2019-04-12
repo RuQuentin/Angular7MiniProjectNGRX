@@ -18,12 +18,4 @@ export class UsersListService {
   getUsers(page): Observable<IUsersPage> {
     return this.http.get<IUsersPage>(`${API_URL}/users?page=${page}`)
   }
-
-  // setCurrentUser(user) {
-  //   this.currentUser = user;
-  // }
-
-  // getCurrentUser() {
-  //   return this.currentUser;
-  // }
 }

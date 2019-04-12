@@ -3,7 +3,10 @@
   flex-direction: column;
   width: 300px;
 
-  margin: 20% auto;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .login-form-wrapper > * {

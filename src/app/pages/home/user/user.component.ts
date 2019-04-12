@@ -1,5 +1,4 @@
 import { Component, Input } from '@angular/core';
-import { IUser } from 'src/app/models/user.interface';
 import { UsersListService } from '../users-list/users-list.service';
 
 import { Store, select } from '@ngrx/store';
@@ -13,7 +12,6 @@ import { selectUsersList, selectUser } from '../../../store/selectors/users-list
   styleUrls: ['./user.component.scss']
 })
 export class UserComponent{
-  // currentUser: IUser;
   usersList$ = this.store.pipe(select(selectUsersList));
   user$ = this.store.pipe(select(selectUser));
   

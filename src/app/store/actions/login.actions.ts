@@ -6,8 +6,7 @@ import { IToken } from '../../models/token.interface'
 export enum ELoginActions {
   LOGIN = '[LOGIN] Login',
   LOGIN_SUCCESS = '[LOGIN] Login Success',
-  LOGIN_UNSUCCESS = '[LOGIN] Login Unsuccess',
-  LOGIN_EMPTY = '[LOGIN] Login Empty'
+  LOGIN_UNSUCCESS = '[LOGIN] Login Unsuccess'
 }
 
 export class Login implements Action {
@@ -25,8 +24,4 @@ export class LoginUnsuccess implements Action {
   constructor(public payload: any) {};
 }
 
-export class LoginEmpty implements Action {
-  public readonly type = ELoginActions.LOGIN_EMPTY;
-}
-
-export type LoginActions = Login | LoginSuccess | LoginUnsuccess | LoginEmpty;
+export type LoginActions = Login | LoginSuccess | LoginUnsuccess;
